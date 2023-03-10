@@ -14,13 +14,13 @@
     <h1 class="titulo select-disable">Simulador Financeiro</h1>
     <section class="content animate__animated animate__backInLeft">
         <div class="entradas">
-            <input class="input select-disable" type="number" id="input_qtd_pdt"  placeholder="Insira a quantidade média de produtos estocados">
-            <input class="input select-disable" type="number" id="input_vlr_pdt" placeholder="Insira o valor médio da produção por cada produto estocado">
+            <input class="input select-disable" type="number" id="input_qtd_pdt"  placeholder="Insira a quantidade de produtos (mês)">
+            <input class="input select-disable" type="number" id="input_vlr_pdt" placeholder="Insira o valor da produção por produto">
             <button class="button select-disable" onClick="calcularLucro" id="btn_submit">Calcular lucro</button>
-            <div style=" -webkit-user-select: none; justify-content:center; text-align: justify; margin: 1vw;" id="div_resp"> <p style="font-size: 24px; letter-spacing: 3px;">...</p></div>
+            <div style=" -webkit-user-select: none; justify-content:center; text-align: flex-start; margin: 1vw;" id="div_resp"> <p style="font-size: 24px; letter-spacing: 3px;">...</p></div>
         </div>
         <div class="mensagens select-disable">
-            <div style="justify-content:center; text-align: flex-start; margin: 1vw;" id="retorno"> </div>
+            <div style="justify-content:center; text-align: flex-start; margin: 1vw;" id="retorno"></div>
         </div>
     </section>
     
