@@ -1,6 +1,6 @@
 # Simulador Financeiro
 
-Simulador financeiro básico. Criado como tarefa para a SPRINT1 da faculdade.
+Simulador financeiro básico para laticínios. Criado como tarefa para a SPRINT1 da faculdade, voltada a calcular o lucro de empresas de acordo com seu estoque e valor de produtos.
 
 #
 
@@ -17,4 +17,4 @@ Simulador financeiro básico. Criado como tarefa para a SPRINT1 da faculdade.
 
 - 📌Em progresso.
 - 🛠 Site NÃO responsivo no momento. Totalmente feito em HTML, CSS e JS puro.
-- 🔗 --FuturoLink
+- 🔗 https://luigivicchietti.github.io/simulador_financeiro/
