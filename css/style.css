@@ -34,7 +34,7 @@ body {
     font-family: 'Maven Pro', sans-serif;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 main {
