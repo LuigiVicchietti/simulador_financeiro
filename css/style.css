@@ -10,34 +10,42 @@ html {
     scroll-behavior: smooth;
 }
 
+.select-disable {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 body::before {
     content: "";
     width: 100%;
-    height: 53vw;
+    height: 100vh;
     position: absolute;
     background-image: url(../img/wave-bottom.svg), url(../img/wave-top.svg);
     background-size: contain;
     background-position: bottom, top;
     background-repeat: no-repeat;
-    top: -20px;
+    top: 0;
     left: 0;
     z-index: -1;
 }
 
 body {
     width: 100%;
-    height: 53vw;
-    display: flex;
-    flex-direction: column;
-    position: relative;
     font-family: 'Maven Pro', sans-serif;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-.select-disable {
-    -webkit-user-select: none;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 6vh;
 }
 
 .titulo {
@@ -54,9 +62,11 @@ body {
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-5px);
     }
+
     100% {
         transform: translateY(0px);
     }
@@ -70,20 +80,29 @@ body {
     width: 55%;
     background-color: #FFF 0;
     margin-bottom: 3.5vw;
-    padding: 3vw;
+    padding: 2rem;
 }
 
 .input {
-    cursor: default;
     width: 20vw;
     border-style: solid;
     border-width: 2px;
     border-color: #A9A9A9;
     border-radius: 20px;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    margin: 2vh 0;
     padding: 0.8vw;
-    outline: 0;
+    transition: 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+.input:hover {
+    border-color: #F08080;
+}
+
+.input:focus {
+    border-color: #F08080;
+    box-shadow: 0px 2px 8px 3px #F08080;
 }
 
 .button {
@@ -106,7 +125,8 @@ body {
 }
 
 .entradas {
-    width: 60%;
+    width: 65%;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,8 +136,15 @@ body {
     border-width: 2px;
     border-radius: 2vw;
     border-color: #F08080;
-    padding: 5px;
-    margin-right: 2vw;
+    padding: 1rem;
+    margin-right: 3vw;
+}
+
+.entradas div {
+    user-select: none;
+    justify-content: center;
+    text-align: flex-start;
+    margin: 0.8rem;
 }
 
 .mensagens::-webkit-scrollbar {
@@ -134,8 +161,8 @@ body {
 }
 
 .mensagens {
-    width: 60%;
-    height: 21.5vw;
+    width: 65%;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -144,7 +171,13 @@ body {
     border-width: 2px;
     border-radius: 0.7vw;
     border-color: #F08080;
-    padding: 2px;
-    margin-left: 2vw;
+    padding: 1rem;
+    margin: 0;
     overflow-y: scroll;
+}
+
+.mensagens div {
+    justify-content: center;
+    text-align: flex-start;
+    margin: 1vh;
 }

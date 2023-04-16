@@ -15,6 +15,6 @@ Simulador financeiro básico para laticínios. Criado como tarefa para a SPRINT1
 
 #
 
-- 📌Em progresso.
-- 🛠 Site NÃO responsivo no momento. Totalmente feito em HTML, CSS e JS puro.
+- 📌Finalizado.
+- 🛠 Site responsivo. Totalmente feito em HTML, CSS e JS puro.
 - 🔗 https://luigivicchietti.github.io/simulador_financeiro/
